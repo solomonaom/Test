@@ -1,0 +1,8 @@
+1.yum install -y yum-utils device-mapper-persistent-data lvm2
+2.yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+3.rpm -ivh container-selinux-2.107-1.el7_6.noarch
+4.yum install docker-ce docker-ce-cli containerd.io
+5.systemctl start docker << start docker
+6.docker run hello-world <<Verify that Docker Engine - Community is installed correctly by running the hello-world image.
+
+docker run -i -t busybox:1.26.2
